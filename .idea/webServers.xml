@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="dfb8ae9f-0e71-4b74-8eee-c824a62653b7" name="sylar-remote-dev">
+        <fileTransfer rootFolder="/root/sylar" accessType="SFTP" host="101.132.143.73" port="22" sshConfigId="b8695f67-e44f-4818-921a-cdd313d961f9" sshConfig="root@101.132.143.73:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

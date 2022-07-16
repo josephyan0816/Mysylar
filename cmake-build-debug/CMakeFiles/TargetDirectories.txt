@@ -1,0 +1,3 @@
+/Users/josephyan/CLionProjects/sylar/cmake-build-debug/CMakeFiles/sylar.dir
+/Users/josephyan/CLionProjects/sylar/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/josephyan/CLionProjects/sylar/cmake-build-debug/CMakeFiles/rebuild_cache.dir
