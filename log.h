@@ -8,6 +8,7 @@
 #include <string>
 #include <stdint.h>
 #include <memory>
+#include <list>
 
 namespace sylar {
 
@@ -72,10 +73,20 @@ namespace sylar {
 
         void log(LogLevel::Level level, const LogEvent::ptr event);
 
+        void debug(LogEvent::ptr event);
+        void info(LogEvent::ptr event);
+        void warn(LogEvent::ptr event);
+        void fatal(LogEvent::ptr event);
+        void error(LogEvent::ptr event);
+        void addAppender(LogAppender::ptr appender);
+        void delAppender(LogAppender::ptr appender);
+        LogLevel::Level getLevel() const{ return m_level;}
+        void setLevel(LogLevel::Level val){m_level= val;}
+
     private:
-        std::string m_name;
-        LogLevel::Level m_level;
-        LogAppender::ptr m_ptr;
+        std::string m_name;//日志名称
+        LogLevel::Level m_level;//日志级别
+       std::list<LogAppender::ptr>  m_appenders;//Appender集合
     };
 
     //输出到控制台的Appender

@@ -3,4 +3,4 @@ project(sylar)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(sylar main.cpp log.h)
+add_executable(sylar main.cpp log.h log.cpp)
